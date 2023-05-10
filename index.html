@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Base Apparel coming soon page</title>
+</head>
+<body>
+  <main class="container">
+    <section class="details">
+      <div class="logo">
+        <img src="images/logo.svg" alt="Base Apparel">
+      </div>
+
+      <div class="content">
+        <h1><span>We're</span> coming soon</h1>
+        <p>Hello fellow shoppers! We're currently building our new fashion store. 
+          Add your email below to stay up-to-date with announcements and our launch deals.</p>
+      </div>
+      
+
+      <form id="form" autocomplete="off">
+        <div class="info">
+          <input type="email" id="email-field" placeholder="Email Address" aria-label="email address">
+          <img src="images/icon-error.svg" id="error-img" alt="">
+          <button type="submit" class="btn" aria-label="submit"><img src="images/icon-arrow.svg" alt="Subscribe to e-mail feed"></button>
+        </div>
+        <p id="error-txt">Please provide a valid email</p>
+      </form>
+    </section>
+
+    <section class="image"></section>
+
+  </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
