@@ -115,3 +115,96 @@ button:hover {
     background-size: cover;
 }
 
+@media screen and (max-width: 1200px) {
+    main {
+        grid-template-columns: 50% 50%;
+    }
+
+    .details {
+    padding: 4rem;
+    }
+}
+
+@media screen and (max-width: 975px) {
+    main {
+        grid-template-columns: 50% 50%;
+    }
+
+    .details {
+    padding: 4rem 2rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 3fr 4fr;
+        grid-template-areas: 
+            "logo"
+            "image"
+            "details";
+    }
+
+    .logo {
+        grid-area: logo;
+        padding: 2rem 1rem;
+        position: absolute;
+        top: 2%;
+        left: 8%;
+    }
+
+    .image {
+        grid-area: image;
+        background-image: url(images/hero-mobile.jpg);
+        background-size: cover;
+    }
+
+    .details {
+        grid-area: details;
+        text-align: center;
+    }
+
+    form {
+        padding-left: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    h1 {
+        font-size: 3rem;
+        letter-spacing: 0.8rem;
+    }
+
+    #error-img {
+        left: 60%;
+    }
+    
+    #error-txt {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    
+    .logo {
+        margin-bottom: 3rem;
+    }
+
+    .content {
+        padding: 1rem;
+    }
+    h1 {
+        font-size: 2.2rem;
+    }
+    
+    p {
+        font-size: 0.8rem;
+        
+    }
+    
+    #error-txt {
+        font-size: 0.8rem;
+    }
+
+}
+
